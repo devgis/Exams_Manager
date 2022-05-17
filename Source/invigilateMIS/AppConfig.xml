@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<config>
+  <DbConn>Data Source=.;Initial Catalog=db_Invigilate;User ID=sa;Password=12345678910;Connection Timeout=30;</DbConn>
+  <ExcelConn>123</ExcelConn>
+<!-- 注释-->
+</config>

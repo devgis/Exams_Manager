@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B0A56261-9623-4BAB-9650-8492A3BA6F64}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>invigilateMIS</RootNamespace>
+    <AssemblyName>invigilateMIS</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admin\adAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin\adAdd.designer.cs">
+      <DependentUpon>adAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin\adRev.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin\adRev.designer.cs">
+      <DependentUpon>adRev.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin\frmAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin\frmAdmin.designer.cs">
+      <DependentUpon>frmAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CheckCode.cs" />
+    <Compile Include="DBHelper.cs" />
+    <Compile Include="examInfo\examAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="examInfo\examAdd.Designer.cs">
+      <DependentUpon>examAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="examInfo\frmExam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="examInfo\frmExam.Designer.cs">
+      <DependentUpon>frmExam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="examInfo\examRev.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="examInfo\examRev.Designer.cs">
+      <DependentUpon>examRev.cs</DependentUpon>
+    </Compile>
+    <Compile Include="examName\frmName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="examName\frmName.Designer.cs">
+      <DependentUpon>frmName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="invInfo\frmTCinv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="invInfo\frmTCinv.Designer.cs">
+      <DependentUpon>frmTCinv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="invInfo\frmInv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="invInfo\frmInv.Designer.cs">
+      <DependentUpon>frmInv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="invInfo\frmTeac.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="invInfo\frmTeac.Designer.cs">
+      <DependentUpon>frmTeac.cs</DependentUpon>
+    </Compile>
+    <Compile Include="invInfo\InvAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="invInfo\InvAdd.Designer.cs">
+      <DependentUpon>InvAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="examName\nameAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="examName\nameAdd.Designer.cs">
+      <DependentUpon>nameAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="examName\nameRev.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="examName\nameRev.Designer.cs">
+      <DependentUpon>nameRev.cs</DependentUpon>
+    </Compile>
+    <Compile Include="teacher\tcAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="teacher\tcAdd.Designer.cs">
+      <DependentUpon>tcAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tcMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tcMain.Designer.cs">
+      <DependentUpon>tcMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="teacher\tcRev.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="teacher\tcRev.Designer.cs">
+      <DependentUpon>tcRev.cs</DependentUpon>
+    </Compile>
+    <Compile Include="teacher\frmTeacher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="teacher\frmTeacher.Designer.cs">
+      <DependentUpon>frmTeacher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="loginHelper.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="admin\adAdd.resx">
+      <DependentUpon>adAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\adRev.resx">
+      <DependentUpon>adRev.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\frmAdmin.resx">
+      <DependentUpon>frmAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="examInfo\examAdd.resx">
+      <DependentUpon>examAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="examInfo\examRev.resx">
+      <DependentUpon>examRev.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="examInfo\frmExam.resx">
+      <DependentUpon>frmExam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="examName\frmName.resx">
+      <DependentUpon>frmName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="invInfo\frmTCinv.resx">
+      <DependentUpon>frmTCinv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="invInfo\frmInv.resx">
+      <DependentUpon>frmInv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="invInfo\frmTeac.resx">
+      <DependentUpon>frmTeac.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="invInfo\InvAdd.resx">
+      <DependentUpon>InvAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="examName\nameAdd.resx">
+      <DependentUpon>nameAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="examName\nameRev.resx">
+      <DependentUpon>nameRev.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tcMain.resx">
+      <DependentUpon>tcMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="teacher\frmTeacher.resx">
+      <DependentUpon>frmTeacher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="teacher\tcAdd.resx">
+      <DependentUpon>tcAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="teacher\tcRev.resx">
+      <DependentUpon>tcRev.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AppConfig.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DBUtility\DBUtility.csproj">
+      <Project>{0988c62e-247f-471f-a183-db509c7a3839}</Project>
+      <Name>DBUtility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{53995DBB-9836-4647-AD22-865884FDEB9E}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
